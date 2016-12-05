@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 char rotate(char dir, char mov){
-    switch(dir){   // break no needed because of return
+    switch(dir){   // break not needed because of return
         case 'N':
           return mov == 'L' ? 'W' : 'E';
         case 'E':
