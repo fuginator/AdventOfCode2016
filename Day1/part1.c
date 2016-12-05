@@ -53,5 +53,6 @@ int main()
     }
 
     printf("Final distance is %i blocks away.\n", abs(cords[0]) + abs(cords[1]));
+    fclose(fp);  // fp should be valid as we return -1 above we fail to open
     return(0);
 }
