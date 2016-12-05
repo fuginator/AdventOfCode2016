@@ -52,7 +52,7 @@ int main()
         move(dir, atoi(data+1), cords);  // atoi strips ',' for us
     }
 
-    printf("Final distance is %i blocks away.\n", abs(cords[0]) + abs(cords[1]));
+    printf("Final distance is %i blocks away. (at block %i, %i)\n", abs(cords[0]) + abs(cords[1]), cords[0], cords[1]);    
     fclose(fp);  // fp should be valid as we return -1 above we fail to open
     return(0);
 }
