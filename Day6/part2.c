@@ -4,13 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 
 /* return the position in an array with the highest count */
 char pick_heatmap(int* heatmap) {
-    int i, pos, max = 0;
+    int i, pos, min = INT_MAX;
     for(i = 0; i <= 'z' - 'a'; i++){
-        if(heatmap[i] > max) {
-            max = heatmap[i];
+        if(heatmap[i] < min && heatmap[i] != 0) {
+            min = heatmap[i];
             pos = i;
         }
     }
