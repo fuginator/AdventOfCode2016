@@ -7,7 +7,7 @@ part1: part1.c
 	$(CC) $(CFLAGS) part1.c -o part1.out -lssl -lcrypto
 
 part2: part2.c
-	$(CC) $(CFLAGS) part2.c -o part2.out
+	$(CC) $(CFLAGS) part2.c -o part2.out -lssl -lcrypto
 
 clean:
 	rm -rf part*.out
